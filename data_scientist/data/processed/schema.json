@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "doc_id",
+    "source_text",
+    "entities",
+    "event",
+    "role_impact",
+    "confidence"
+  ],
+  "properties": {
+    "doc_id": {
+      "type": "string"
+    },
+    "source_text": {
+      "type": "object",
+      "required": ["title", "body"],
+      "properties": {
+        "title": { "type": "string" },
+        "body": { "type": "string" }
+      }
+    },
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "type", "role"],
+        "properties": {
+          "name": { "type": "string" },
+          "type": {
+            "enum": [
+              "Company",
+              "Sector",
+              "Market",
+              "Instrument",
+              "Organization",
+              "Country",
+              "Location"
+            ]
+          },
+          "ticker": {
+            "type": ["string", "null"]
+          },
+          "role": {
+            "enum": ["Primary", "Secondary"]
+          }
+        }
+      }
+    },
+    "event": {
+      "type": "object",
+      "required": ["is_event", "event_type", "event_scale", "event_time"],
+      "properties": {
+        "is_event": { "type": "boolean" },
+        "event_type": {
+          "type": ["object", "null"],
+          "properties": {
+            "level_1": {
+              "enum": [
+                "Corporate",
+                "Financial",
+                "Operational",
+                "Legal",
+                "Market",
+                "Regulatory",
+                "Macroeconomic",
+                null
+              ]
+            },
+            "level_2": {
+              "type": ["string", "null"]
+            },
+            "level_3": {
+              "type": ["string", "null"]
+            }
+          }
+        },
+        "event_scale": {
+          "enum": ["Major", "Minor", null]
+        },
+        "event_time": {
+          "enum": ["Past", "Present", "Future", null]
+        }
+      }
+    },
+    "role_impact": {
+      "type": "object",
+      "required": ["shareholders", "creditors", "competitors", "market"],
+      "properties": {
+        "shareholders": { "enum": ["Positive", "Negative", "Neutral", "Mixed", "Unclear"] },
+        "creditors": { "enum": ["Positive", "Negative", "Neutral", "Mixed", "Unclear"] },
+        "competitors": { "enum": ["Positive", "Negative", "Neutral", "Mixed", "Unclear"] },
+        "market": { "enum": ["Positive", "Negative", "Neutral", "Mixed", "Unclear"] }
+      }
+    },
+    "confidence": {
+      "enum": ["High", "Medium", "Low"]
+    }
+  }
+}

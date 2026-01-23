@@ -1,0 +1,148 @@
+{
+    "doc_id": "string",
+    "source_text": {
+        "title": "string",
+        "body": "string"
+    },
+    "entities": {
+        "type": "array",
+        "items": {
+            "name": "string",
+            "type": [
+                "Company",
+                "Sector",
+                "Market",
+                "Instrument",
+                "Organization",
+                "Country",
+                "Location"
+            ],
+            "ticker": [
+                "string",
+                "null"
+            ],
+            "role": [
+                "Primary",
+                "Secondary"
+            ]
+        }
+    },
+    "event": {
+        "is_event": [
+            "true",
+            "false"
+        ],
+        "event_type": {
+            "level_1": [
+                "Corporate",
+                "Financial",
+                "Operational",
+                "Legal",
+                "Market",
+                "Regulatory",
+                "Macroeconomic",
+                "null"
+            ],
+            "level_2": {
+                "Corporate": [
+                    "Merger & Acquisition (M&A)",
+                    "Restructuring",
+                    "Bankruptcy",
+                    "Ownership Change"
+                ],
+                "Financial": [
+                    "Earnings",
+                    "Revenue",
+                    "Profit",
+                    "Loss",
+                    "Dividend",
+                    "Debt",
+                    "Guidance"
+                ],
+                "Operational": [
+                    "Production",
+                    "Supply Chain",
+                    "Expansion",
+                    "Shutdown",
+                    "Technology"
+                ],
+                "Legal": [
+                    "Lawsuit",
+                    "Fine",
+                    "Investigation",
+                    "Sanction"
+                ],
+                "Market": [
+                    "Price Movement",
+                    "Volatility",
+                    "Index Change",
+                    "Liquidity"
+                ],
+                "Macroeconomic": [
+                    "Inflation",
+                    "Interest Rate",
+                    "GDP",
+                    "Employment",
+                    "Credit / Lending"
+                ],
+                "Regulatory": [
+                    "Policy Change",
+                    "Approval",
+                    "Restriction"
+                ],
+                "null": [
+                    "null"
+                ]
+            },
+            "level_3": [
+                "string",
+                "null"
+            ]
+        },
+        "event_scale": [
+            "Major",
+            "Minor"
+        ],
+        "event_time": [
+            "Past",
+            "Present",
+            "Future",
+            "null"
+        ]
+    },
+    "role_impact": {
+        "shareholders": [
+            "Positive",
+            "Negative",
+            "Neutral",
+            "Mixed",
+            "Unclear"
+        ],
+        "creditors": [
+            "Positive",
+            "Negative",
+            "Neutral",
+            "Mixed",
+            "Unclear"
+        ],
+        "competitors": [
+            "Positive",
+            "Negative",
+            "Neutral",
+            "Mixed",
+            "Unclear"
+        ],
+        "market": [
+            "Positive",
+            "Negative",
+            "Neutral",
+            "Mixed",
+            "Unclear"
+        ]
+    },
+    "confidence": [
+        "High",
+        "Medium",
+        "Low"
+    ]
+}
