@@ -1,0 +1,1 @@
+./llama-cli.exe -m C:\Users\Alex\Desktop\VSP_news_analysis\data_scientist\promts\scripts_cmd\event_1\system_file_prompt_event.txt --file C:\Users\Alex\Desktop\VSP_news_analysis\data_scientist\promts\scripts_cmd\event_1\prompt_event.txt --temp 0.1 -s 42

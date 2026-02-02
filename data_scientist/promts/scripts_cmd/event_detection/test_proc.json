@@ -1,0 +1,307 @@
+[[ {
+        "doc_id": "4",
+        "source_text": {
+            "title": "«Северсталь» в 1 квартале снизила выпуск стали на 8%",
+            "body": "Показатель опустился до 2,701 млн тонн стали"
+        },
+        "entities": [
+            {
+                "name": "Северсталь",
+                "type": "Company",
+                "ticker": null,
+                "role": "Primary"
+            }
+        ],
+        "event": {
+            "is_event": true,
+            "event_type": {
+                "level_1": "Operational",
+                "level_2": "Production",
+                "level_3": "Снижение объема производства стали в I квартале"
+            },
+            "event_scale": "Minor",
+            "event_time": "Past"
+        },
+        "role_impact": {
+            "shareholders": "Unclear",
+            "competitors": "Unclear",
+            "market": "Unclear"
+        },
+        "confidence": "High"
+    },
+        {
+        "doc_id": "111",
+        "source_text": {
+            "title": "Молдавия больше не будет закупать газ у \"Газпрома\"",
+            "body": "Республике удалось закупить топливо на европейском рынке"
+        },
+        "entities": [
+            {
+                "name": "Молдавия",
+                "type": "Country",
+                "ticker": null,
+                "role": "Primary"
+            },
+            {
+                "name": "Газпром",
+                "type": "Company",
+                "ticker": null,
+                "role": "Primary"
+            }
+        ],
+        "event": {
+            "is_event": true,
+            "event_type": {
+                "level_1": "Operational",
+                "level_2": "Supply Chain",
+                "level_3": "Отказ от закупок у Газпрома и переход на альтернативный рынок"
+            },
+            "event_scale": "Major",
+            "event_time": "Present"
+        },
+        "role_impact": {
+            "shareholders": "Negative",
+            "competitors": "Positive",
+            "market": "Neutral"
+        },
+        "confidence": "Medium"
+    }, {
+        "doc_id": "112",
+        "source_text": {
+            "title": "Российский экспорт нефти в Китай подскочил до рекордного уровня",
+            "body": "Экспорт нефти и конденсата из России в Китай за прошедший месяц достиг самого высокого уровня с апреля 2020 года, превысив 1,5 млн баррелей в день"
+        },
+        "entities": [
+            {
+                "name": "Россия",
+                "type": "Country",
+                "ticker": null,
+                "role": "Primary"
+            },
+            {
+                "name": "Китай",
+                "type": "Country",
+                "ticker": null,
+                "role": "Primary"
+            }
+        ],
+        "event": {
+            "is_event": true,
+            "event_type": {
+                "level_1": "Operational",
+                "level_2": "Expansion",
+                "level_3": "Рост объемов экспорта нефти из России в Китай"
+            },
+            "event_scale": "Major",
+            "event_time": "Past"
+        },
+        "role_impact": {
+            "shareholders": "Positive",
+            "competitors": "Negative",
+            "market": "Neutral"
+        },
+        "confidence": "Medium"
+    },
+ {
+        "doc_id": "129",
+        "source_text": {
+            "title": "Интерес российских инвесторов к акциям китайских и гонконгских компаний вырос в августе",
+            "body": "Объем чистых покупок увеличился на 75%"
+        },
+        "entities": [
+            {
+                "name": "Россия",
+                "type": "Country",
+                "ticker": null,
+                "role": "Primary"
+            },
+            {
+                "name": "Китай",
+                "type": "Country",
+                "ticker": null,
+                "role": "Primary"
+            },
+            {
+                "name": "Гонконг",
+                "type": "Location",
+                "ticker": null,
+                "role": "Secondary"
+            }
+        ],
+        "event": {
+            "is_event": true,
+            "event_type": {
+                "level_1": "Market",
+                "level_2": "Liquidity",
+                "level_3": "Рост покупательной активности физических инвесторов"
+            },
+            "event_scale": "Major",
+            "event_time": "Past"
+        },
+        "role_impact": {
+            "shareholders": "Positive",
+            "competitors": "Negative",
+            "market": "Positive"
+        },
+        "confidence": "Medium"
+    },
+    {
+        "doc_id": "144",
+        "source_text": {
+            "title": "Ход торгов. Рубль укрепляется, индекс МосБиржи снижается",
+            "body": "Индекс МосБиржи в четверг торгуется в зону отрицательных значений, но просадка ограничена 0,3%. Рубль укрепляется, нефть опустилась ниже $79 за баррель Brent"
+        },
+        "entities": [
+            {
+                "name": "Индекс МосБиржи",
+                "type": "Market",
+                "ticker": null,
+                "role": "Primary"
+            },
+            {
+                "name": "Рубль",
+                "type": "Instrument",
+                "ticker": null,
+                "role": "Primary"
+            },
+            {
+                "name": "Brent",
+                "type": "Instrument",
+                "ticker": null,
+                "role": "Secondary"
+            }
+        ],
+        "event": {
+            "is_event": true,
+            "event_type": {
+                "level_1": "Market",
+                "level_2": "Price Movement",
+                "level_3": "Падение индекса, укрепление рубля"
+            },
+            "event_scale": "Minor",
+            "event_time": "Present"
+        },
+        "role_impact": {
+            "shareholders": "Negative",
+            "competitors": "Neutral",
+            "market": "Neutral"
+        },
+        "confidence": "Medium"
+    }
+],
+[{
+        "doc_id": "138",
+        "source_text": {
+            "title": "Российские акции все еще очень дешевые! Закупаемся?",
+            "body": "«Без плохих новостей» — еженедельное новостное шоу об инвестициях, в котором БКС доказывает, что на каждой новости, какой бы плохой она ни была, можно заработать"
+        },
+        "entities": [],
+        "event": {
+            "is_event": false,
+            "event_type": {
+                "level_1": null,
+                "level_2": null,
+                "level_3": null
+            },
+            "event_scale": null,
+            "event_time": null
+        },
+        "role_impact": {
+            "shareholders": "Unclear",
+            "competitors": "Unclear",
+            "market": "Unclear"
+        },
+        "confidence": "Low"
+    },{
+        "doc_id": "156",
+        "source_text": {
+            "title": "Ожидаемые события на 18 января 2024",
+            "body": "Отчет МЭА по рынку нефти, протокол ЕЦБ, запасы нефти в США"
+        },
+        "entities": [],
+        "event": {
+            "is_event": false,
+            "event_type": {
+                "level_1": null,
+                "level_2": null,
+                "level_3": null
+            },
+            "event_scale": null,
+            "event_time": null
+        },
+        "role_impact": {
+            "shareholders": "Unclear",
+            "competitors": "Unclear",
+            "market": "Unclear"
+        },
+        "confidence": "Low"
+    }, {
+        "doc_id": "159",
+        "source_text": {
+            "title": "Топ-5 российских акций: рекомендации недели",
+            "body": "Какие российские акции могут стать выгодной покупкой: прогноз на основании аналитики BCS Global Markets"
+        },
+        "entities": [],
+        "event": {
+            "is_event": false,
+            "event_type": {
+                "level_1": null,
+                "level_2": null,
+                "level_3": null
+            },
+            "event_scale": null,
+            "event_time": null
+        },
+        "role_impact": {
+            "shareholders": "Unclear",
+            "competitors": "Unclear",
+            "market": "Unclear"
+        },
+        "confidence": "Low"
+    },{
+        "doc_id": "168",
+        "source_text": {
+            "title": "Обжегся на молоке: какую стратегию выбрать инвестору...",
+            "body": "Многие инвесторы в сложные времена..."
+        },
+        "entities": [],
+        "event": {
+            "is_event": false,
+            "event_type": null,
+            "event_scale": null,
+            "event_time": null
+        },
+        "role_impact": {
+            "shareholders": "Unclear",
+            "competitors": "Unclear",
+            "market": "Unclear"
+        },
+        "confidence": "Low"
+    }, {
+        "doc_id": "186",
+        "source_text": {
+            "title": "Видео. ЦБ оставит ключевую ставку без изменений",
+            "body": "О ситуации на российском рынке акций и важных корпоративных новостях рассказывает Андрей Богдашов, старший персональный брокер БКС Брокер"
+        },
+        "entities": [
+            {
+                "name": "ЦБ",
+                "type": "Organization",
+                "ticker": null,
+                "role": "Primary"
+            }
+        ],
+        "event": {
+            "is_event": false,
+            "event_type": null,
+            "event_scale": null,
+            "event_time": null
+        },
+        "role_impact": {
+            "shareholders": "Unclear",
+            "competitors": "Unclear",
+            "market": "Unclear"
+        },
+        "confidence": "Low"
+    }]
+    ]
